@@ -1,0 +1,313 @@
+
+/* ------- Basic Styles ------- */
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  text-align: center;
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+
+h3 {
+  margin: .5em 0;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+p, form{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+/* Hyperlink styles */
+a:link {
+  text-decoration: none;
+  color: #F8BC7B;
+}
+
+a:hover {
+  color: #FCA13E;
+}
+
+a:active {
+  color: #FF8600;
+}
+
+a:visited {
+  color: 	#D3D3D3;
+}
+
+ol, ul {
+  margin: 0 auto;
+}
+
+hr {
+  border: 1px solid #FF8600;
+}
+
+img {
+  width: 100%;
+  margin: auto;
+}
+
+ul {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+
+/* ------ Section Styles -------- */
+
+.body-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header,
+main,
+footer {
+  width: 100%;
+}
+
+header{
+  background: #27187E;
+  color: #758BFD;
+  padding: 20px 0 5px 0;
+  border-bottom: 3px solid #FF8600;
+}
+
+.header-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.logo {
+  font-size: 70px;
+  font-family: "Brush Script MT";
+  margin-bottom: 18px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.header-wrapper h1 {
+  font-size: 2.5em;
+}
+
+#menu {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-around;
+  /* padding: 0 10px; */
+}
+
+#menu li a {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+#menu li:last-child a{
+  margin-right: 0;
+}
+
+main {
+  background: #758BFD;
+  color: #27187E;
+}
+
+.main-wrapper {
+  margin: auto;
+  padding: 24px 16px;
+}
+
+.prof-img {
+  border-radius: 30%;
+}
+
+
+
+.byDay {
+  text-align: left;
+  margin-bottom: 14px;
+}
+
+.byNight {
+  text-align: right;
+}
+
+.anyhoo {
+  margin-bottom: 4px;
+}
+
+.jonah-sax {
+  border-radius: 100% 100% 30% 30%;
+}
+
+
+
+form label {
+  display: block;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+form input {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+form textarea {
+  height: 4.75rem;
+  width: 100%;
+  color: #000;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+
+
+
+footer {
+  text-align: center;
+  background: #AEB8FE;
+  padding: .8em 0;
+}
+
+.footer-wrapper {
+  display: block;
+  margin: auto;
+}
+
+.contact h3 {
+  margin-bottom: 12px;
+}
+
+.contact img {
+  max-width: 75px;
+  text-align: center;
+}
+
+.contact p {
+  text-align: center;
+  margin-top: 5px;
+}
+
+#intro, #about, #projects, #contact {
+  padding: 24px 0;
+}
+
+#intro {
+  padding-top: 0;
+}
+
+/* ------- flexbox -------- */
+
+.group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item {
+  flex: 1;
+  margin-bottom: 10px;
+  max-width: 500px;
+}
+
+.project-group {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.project-item {
+  min-width: 250px;
+  max-width: 450px;
+}
+
+
+.contact .item .group {
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+
+
+
+
+
+
+/* ------- Media Queries ------- */
+
+@media all and (min-width: 800px) {
+
+  p, li{
+    font-size: 14px;
+  }
+
+  .prof-img {
+    border-radius: 125% 30% 30% 125%;
+  }
+
+  .jonah-sax {
+    border-radius: 30% 125% 125% 30%;
+  }
+  
+  #menu {
+    padding: 0 60px;
+  }
+
+  .group {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .project-group {
+    flex-direction: row;
+  }
+
+  .item {
+    margin: 0 10px;
+  }
+
+
+  .contact {
+    margin: auto;
+  }
+}
+
+@media all and (min-width: 1024px) {
+
+  p, li {
+    font-size: 16px;
+  }
+
+  .header-wrapper {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #menu {
+    padding: 0;
+  }
+
+  #menu li a {
+    margin-right: 30px;
+    font-size: 22px;
+  }
+  
+}
+
+
