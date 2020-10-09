@@ -91,7 +91,7 @@ header{
 }
 
 .logo {
-  font-size: 70px;
+  font-size: 60px;
   font-family: "Brush Script MT";
   margin-bottom: 18px;
   display: flex;
@@ -254,6 +254,10 @@ footer {
 
   p, li{
     font-size: 14px;
+  }
+
+  .logo {
+    font: 70px;
   }
 
   .prof-img {
