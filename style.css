@@ -30,19 +30,19 @@ p, form{
 /* Hyperlink styles */
 a:link {
   text-decoration: none;
-  color: #F8BC7B;
+  color: #27187E;
 }
 
 a:hover {
-  color: #FCA13E;
+  color: #27187E;
 }
 
 a:active {
-  color: #FF8600;
+  color: #27187E;
 }
 
 a:visited {
-  color: 	#D3D3D3;
+  color: 	#fff;
 }
 
 ol, ul {
@@ -50,7 +50,7 @@ ol, ul {
 }
 
 hr {
-  border: 1px solid #FF8600;
+  border: 1px solid #ff8400;
 }
 
 img {
@@ -113,6 +113,7 @@ header{
 #menu li a {
   margin-right: 10px;
   font-size: 18px;
+  color: #ff8400;
 }
 
 #menu li:last-child a{
